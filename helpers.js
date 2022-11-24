@@ -47,3 +47,13 @@ Template.registerHelper('or', function() {
         if (arg) return arg;
     }
 });
+
+Template.registerHelper('and', function () {
+    let prev = true;
+    for (const arg of arguments) {
+        prev = prev && arg;
+        if (!prev)
+            break;
+    }
+    return prev;
+});

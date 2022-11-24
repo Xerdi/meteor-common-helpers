@@ -23,5 +23,6 @@ All `li` items end up with the class `active` in this example.
     <li class="{{lt 3 4 'active'}}">...</li>
     <li class="{{lte 4 4 'active'}}">...</li>
     <li class="{{or false false false 'active'}}">...</li>
+    <li class="{{and true true true 'active'}}">...</li>
 </ul>
 ```
